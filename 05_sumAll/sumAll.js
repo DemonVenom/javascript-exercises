@@ -1,31 +1,31 @@
-const sumAll = function(input, asdf) {
+const sumAll = function(input1, input2) {
 
     let result = 0
 
-    if (input < 0 || asdf < 0) {
+    if (input1 < 0 || input2 < 0) {
 
         return "ERROR";
     }
-    else if (input < 0 || asdf < 0) {
+    else if (input1 < 0 || input2 < 0) {
 
         return "ERROR";
     }
-    else if (!Number.isInteger(input) || !Number.isInteger(asdf)) {
+    else if (!Number.isInteger(input1) || !Number.isInteger(input2)) {
 
         return "ERROR";
     }
-    else if (input > asdf) {
+    else if (input1 > input2) {
 
-        for (let i = asdf; i <= input; i++) {
+        for (let i = input2; i <= input1; i++) {
 
             result += i;
         }
 
         return result;
     }
-    else if (input < asdf) {
+    else if (input1 < input2) {
 
-        for (let i = input; i <= asdf; i++) {
+        for (let i = input1; i <= input2; i++) {
 
             result += i;
         }
